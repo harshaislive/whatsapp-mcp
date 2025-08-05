@@ -1,0 +1,48 @@
+{
+  "name": "whatsapp-mcp",
+  "version": "1.0.0",
+  "description": "A Model Context Protocol server for WhatsApp integration with HTTP and stdio transports",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "dev": "nodemon --exec ts-node --esm src/index.ts",
+    "dev:http": "cross-env MCP_TRANSPORT=http nodemon --exec ts-node --esm src/index.ts",
+    "dev:stdio": "cross-env MCP_TRANSPORT=stdio nodemon --exec ts-node --esm src/index.ts",
+    "start": "cross-env MCP_TRANSPORT=http node dist/index.js",
+    "start:http": "cross-env MCP_TRANSPORT=http node dist/index.js",
+    "start:stdio": "cross-env MCP_TRANSPORT=stdio node dist/index.js",
+    "railway:build": "npm install && npm run build",
+    "railway:start": "npm start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["whatsapp", "mcp", "model-context-protocol", "chatbot", "automation"],
+  "author": "harshaislive",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/harshaislive/whatsapp-mcp.git"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.17.1",
+    "@types/node": "^24.2.0",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.1",
+    "express": "^5.1.0",
+    "qrcode": "^1.5.4",
+    "qrcode-terminal": "^0.12.0",
+    "typescript": "^5.9.2",
+    "whatsapp-web.js": "^1.31.0",
+    "winston": "^3.17.0",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.3",
+    "@types/qrcode": "^1.5.5",
+    "@types/qrcode-terminal": "^0.12.2",
+    "cross-env": "^10.0.0",
+    "nodemon": "^3.1.10",
+    "ts-node": "^10.9.2"
+  }
+}
