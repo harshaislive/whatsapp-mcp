@@ -4,5 +4,9 @@
       "Bash(npm run build:*)"
     ],
     "deny": []
-  }
+  },
+  "enabledMcpjsonServers": [
+    "github"
+  ],
+  "enableAllProjectMcpServers": true
 }

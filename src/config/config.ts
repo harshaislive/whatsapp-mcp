@@ -1,5 +1,5 @@
 import dotenv from 'dotenv';
-import type { WhatsAppClientConfig } from '../types/whatsapp.js';
+import type { WhatsAppClientConfig } from '../types/whatsapp';
 
 dotenv.config();
 

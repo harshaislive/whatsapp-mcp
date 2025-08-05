@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 
-import { WhatsAppMCPServer } from './server/mcp-server.js';
-import { config } from './config/config.js';
-import logger from './utils/logger.js';
+import { WhatsAppMCPServer } from './server/mcp-server';
+import { config } from './config/config';
+import logger from './utils/logger';
 
 async function main() {
   const transportMode = config.server.transport as 'stdio' | 'http';

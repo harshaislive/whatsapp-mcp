@@ -1,5 +1,5 @@
-import { WhatsAppClientWrapper } from '../whatsapp/client.js';
-import logger from '../utils/logger.js';
+import { WhatsAppClientWrapper } from '../whatsapp/client';
+import logger from '../utils/logger';
 
 export class WhatsAppTools {
   constructor(private whatsappClient: WhatsAppClientWrapper) {}
