@@ -3,14 +3,14 @@ const { Client, LocalAuth } = pkg;
 import qrcode from 'qrcode-terminal';
 import QRCode from 'qrcode';
 import { EventEmitter } from 'events';
-import logger from '../utils/logger';
+import logger from '../utils/logger.js';
 import type { 
   WhatsAppClientConfig, 
   ConnectionState, 
   WhatsAppMessage,
   WhatsAppContact,
   WhatsAppGroup 
-} from '../types/whatsapp';
+} from '../types/whatsapp.js';
 
 export class WhatsAppClientWrapper extends EventEmitter {
   private client: any;

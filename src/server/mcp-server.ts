@@ -7,10 +7,10 @@ import { z } from 'zod';
 import express from 'express';
 import cors from 'cors';
 import { randomUUID } from 'node:crypto';
-import { WhatsAppClientWrapper } from '../whatsapp/client';
-import { WhatsAppTools } from '../tools/whatsapp-tools';
-import logger from '../utils/logger';
-import type { WhatsAppClientConfig } from '../types/whatsapp';
+import { WhatsAppClientWrapper } from '../whatsapp/client.js';
+import { WhatsAppTools } from '../tools/whatsapp-tools.js';
+import logger from '../utils/logger.js';
+import type { WhatsAppClientConfig } from '../types/whatsapp.js';
 
 export class WhatsAppMCPServer {
   private mcpServer: McpServer;
